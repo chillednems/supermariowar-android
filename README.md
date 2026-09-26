@@ -31,6 +31,6 @@ When advancing the `game` or nested `game/data` pin, update `MainActivity.ASSET_
 
 ## Controls
 
-D-pad or left stick navigates and moves. SDL's standardized face-button A (bottom) selects/jumps, B (right) cancels/runs, X (left) uses powerups, Y (top) also jumps, and Start pauses/selects. The gamepad profile is fixed for this Android milestone; the in-game Controls screen only changes keyboard bindings. Player 1 can play locally against CPU opponents.
+D-pad or left stick navigates and moves. SDL's standardized face-button A (bottom) selects and jumps, B (right) cancels in menus and jumps during a match, Y (top) runs, X (left) uses powerups, and Start pauses/selects. R1 also runs and L1 also uses powerups. The gamepad profile is fixed for this Android milestone; the in-game Controls screen only changes keyboard bindings. Player 1 can play locally against CPU opponents.
 
 The older `build.sh` and `custom_files` are retained for historical reference; the Gradle workflow above is the active build.

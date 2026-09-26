@@ -15,7 +15,7 @@ import java.io.InputStream;
 /** Installs the real filesystem asset tree before SDL starts. */
 public final class MainActivity extends Activity {
     private static final String TAG = "SuperMarioWar";
-    private static final String ASSET_VERSION = "3fab0b99a7ac267ff4aa6ec2ae086348b51c022f";
+    private static final String ASSET_VERSION = "383350da5fc6ccc33611f27afe6343ad37ed22f8";
 
     @Override public void onCreate(Bundle state) {
         super.onCreate(state);

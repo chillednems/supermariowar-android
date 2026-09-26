@@ -7,8 +7,8 @@ android {
         applicationId 'net.smwstuff.supermariowar'
         minSdk 35
         targetSdk 35
-        versionCode 2
-        versionName '2.0-android-preview2'
+        versionCode 3
+        versionName '2.0-android-preview3'
     }
     sourceSets.main {
         java.srcDir '../third_party/SDL/android-project/app/src/main/java'

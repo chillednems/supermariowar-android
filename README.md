@@ -23,7 +23,9 @@ For local installation on an Android 15 arm64 device or emulator:
 adb install -r app/build/outputs/apk/debug/app-debug.apk
 ```
 
-The debug APK uses Android's local debug signing key. It is for testing, not a release artifact. No physical Odin 3 test has been completed yet.
+The debug APK uses Android's local debug signing key. It is for testing, not a release artifact. The user confirmed sound and controls on an earlier preview; the preview4 launcher fix still needs an Odin 3 check.
+
+The app retains a running match when sent to the background. After choosing Exit, it ends that native session so the next launcher-icon tap starts with clean SDL and controller state. Settings and extracted assets stay in app-private storage.
 
 When advancing the `game` or nested `game/data` pin, update `MainActivity.ASSET_VERSION` so existing installations refresh their staged asset tree on next launch. The bootstrap copies pinned assets without deleting user-created files.
 

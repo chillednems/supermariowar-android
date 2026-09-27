@@ -27,7 +27,7 @@ The debug APK uses Android's local debug signing key. It is for testing, not a r
 
 The app retains a running match when sent to the background. After choosing Exit, it ends that native session so the next launcher-icon tap starts with clean SDL and controller state. Settings and extracted assets stay in app-private storage.
 
-When advancing the `game` or nested `game/data` pin, update `MainActivity.ASSET_VERSION` so existing installations refresh their staged asset tree on next launch. The bootstrap copies pinned assets without deleting user-created files.
+When changing packaged assets or the nested `game/data` pin, update `MainActivity.ASSET_VERSION` so existing installations refresh their staged asset tree on next launch. A code-only `game` pin does not require recopying unchanged assets. The bootstrap copies pinned assets without deleting user-created files.
 
 `ci/android-debug.yml.template` contains the proposed APK build/check workflow. It is kept outside `.github/workflows` because the current chillednems GitHub OAuth credential lacks `workflow` scope; GitHub rejected a push containing an active workflow. Local build, signature, and 16 KB ZIP alignment checks passed, but hosted CI has not run.
 

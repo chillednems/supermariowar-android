@@ -36,3 +36,9 @@ When changing packaged assets or the nested `game/data` pin, update `MainActivit
 D-pad or left stick navigates and moves. SDL's standardized face-button A (bottom) selects and jumps, B (right) cancels in menus and jumps during a match, Y (top) runs, and X (left) or R1 uses powerups. L1 remains a powerup alias; Start pauses/selects. The gamepad profile is fixed for this Android milestone; the in-game Controls screen only changes keyboard bindings. Player 1 can play locally against CPU opponents.
 
 The older `build.sh` and `custom_files` are retained for historical reference; the Gradle workflow above is the active build.
+
+## Credits
+
+Modern Android port: [chillednems](https://github.com/chillednems) — Android 15/ARM64 build, gamepad integration, asset bootstrap, and lifecycle fixes.
+
+Built on the original Super Mario War game and Android port by their respective contributors; see [game credits](game/CREDITS).

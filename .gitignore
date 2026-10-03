@@ -4,6 +4,6 @@
 /SDL2.tar.gz
 /SDL2_image.tar.gz
 /SDL2_mixer.tar.gz
-/app/build/
+/app/
 /.gradle/
 /local.properties

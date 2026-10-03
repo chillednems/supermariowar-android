@@ -6,7 +6,7 @@ The pinned game revision provides the SDL3 port and CMake source lists. SDL3 is 
 
 ## Build
 
-Install Android SDK platform 35, NDK 29.0.14206865, CMake 3.24 or newer, JDK 17 or newer, and initialize submodules:
+Install Android SDK platform 35, NDK 29.0.14206865, CMake 3.24 or newer, Ninja, and JDK 17 or newer. Set `ANDROID_HOME` to the SDK directory and put `cmake` on `PATH`. Then initialize submodules:
 
 ```sh
 git submodule update --init --recursive
